@@ -12,12 +12,7 @@
 
 # 💫 About Me:
 
-<p align="center">
-  <img 
-    src="https://readme-typing-svg.herokuapp.com?font=Orbitron&weight=600&size=22&duration=1800&pause=600&color=FF66C4&center=true&vCenter=true&width=850&lines=Crafting+Scalable+Web+Experiences;Future+Full-Stack+Engineer+⚡;Code.+Design.+Build.+Repeat." 
-    alt="Modern Animated Intro"
-  />
-</p>
+
 
 <p align="center">
   <b><i>Second-year Computer Science undergrad passionate about building real-world products through code.</i></b>
