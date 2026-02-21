@@ -11,7 +11,25 @@
 
 
 # 💫 About Me:
-Second-year Computer Science undergrad passionate about building real-world products through code. Currently focused on becoming a Full-Stack Developer, working with modern frontend and backend technologies to create scalable and user-friendly web applications. I enjoy designing responsive interfaces, developing APIs, and connecting complete end-to-end systems. Alongside web development, I explore Machine Learning concepts using NumPy, SciPy, and TensorFlow to build intelligent, data-driven solutions.<br><br>
+
+<p align="center">
+  <img 
+    src="https://readme-typing-svg.herokuapp.com?font=Orbitron&weight=600&size=22&duration=1800&pause=600&color=FF66C4&center=true&vCenter=true&width=850&lines=Crafting+Scalable+Web+Experiences;Future+Full-Stack+Engineer+⚡;Code.+Design.+Build.+Repeat." 
+    alt="Modern Animated Intro"
+  />
+</p>
+
+<p align="center">
+  <b><i>Second-year Computer Science undergrad passionate about building real-world products through code.</i></b>
+</p>
+
+<p align="center">
+  I’m currently focused on becoming a <b><i>Full-Stack Developer</i></b>, working with modern frontend and backend technologies to create scalable and user-friendly web applications.<br><br>
+
+  I enjoy <b>designing responsive interfaces</b>, developing APIs, and connecting complete <i>end-to-end systems</i>.<br><br>
+
+  Alongside web development, I explore <b><i>Machine Learning</i></b> using NumPy, SciPy, and TensorFlow to build intelligent, data-driven solutions.
+</p>
 
 
 
