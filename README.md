@@ -1,4 +1,12 @@
-# Hi there, I'm Aayushi! 👋
+
+<p align="center">
+  <img
+    src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&weight=700&size=28&duration=2000&pause=1000&color=FF4DA6&center=true&vCenter=true&width=700&lines=Hi+there,+I'm+Aayushi!+👋"
+    alt="Animated Intro"
+    style="filter: drop-shadow(2px 2px 0px #000) drop-shadow(-1px -1px 0px #000);"
+  />
+</p>
+
 
 
 
