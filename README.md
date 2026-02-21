@@ -4,8 +4,12 @@
 
 
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&size=16&duration=2500&pause=800&color=00FFF7&center=true&vCenter=true&width=500&lines=Still learning.Still Building" alt="footer animation"/>
+  <img 
+    src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&size=16&duration=2500&pause=800&color=00FFF7&center=true&vCenter=true&width=500&lines=Still+learning...+Still+building..." 
+    alt="Typing Animation Footer"
+  />
 </p>
+
 
 
 
