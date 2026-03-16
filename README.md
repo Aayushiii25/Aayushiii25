@@ -21,12 +21,10 @@
 
 
 
-<p align="center">
-  <b><i>Second-year Computer Science undergrad passionate about building real-world products through code.</i></b>
-</p>
+
 
 <p align="center">
-  ## About Me
+ 
 
 Second-year CS undergrad, still very much learning — but I build things 
 while I learn.
