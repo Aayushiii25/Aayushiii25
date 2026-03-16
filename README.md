@@ -26,11 +26,25 @@
 </p>
 
 <p align="center">
-  I’m currently focused on becoming a <b><i>Full-Stack Developer</i></b>, working with modern frontend and backend technologies to create scalable and user-friendly web applications.<br><br>
+  ## About Me
 
-  I enjoy <b>designing responsive interfaces</b>, developing APIs, and connecting complete <i>end-to-end systems</i>.<br><br>
+Second-year CS undergrad, still very much learning — but I build things 
+while I learn.
 
-  Alongside web development, I explore <b><i>Machine Learning</i></b> using NumPy, SciPy, and TensorFlow to build intelligent, data-driven solutions.
+On the full-stack side, I like the whole chain — Next.js and Tailwind on 
+the frontend, REST APIs with FastAPI, Flask, Node.js, or Spring Boot 
+depending on what the project needs, MongoDB for when schemas shouldn't 
+be rigid, and actually deploying the thing at the end.
+
+On the ML side, I'm drawn to problems where data has a time dimension 
+(forecasting, signals) and to making models useful beyond the notebook — 
+RAG pipelines, LLM-powered apps, getting inference to actually work in 
+production. I try to take things to deployment, even if it's messy.
+
+I also spend time on LeetCode and Codeforces — I find the problem-solving 
+side of CS just as fun as the building side.
+
+Always curious, occasionally stuck, usually shipping.
 </p>
 
 
