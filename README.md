@@ -25,20 +25,21 @@
 
 <p align="center">
  
+Building scalable systems at the intersection of Software Engineering, Machine Learning, and Distributed Computing.
 
-I'm a CS undergraduate who enjoys building systems where algorithms, machine learning, and software engineering intersect.
+I'm a Computer Science undergraduate who enjoys turning complex ideas into production-ready systems. My projects include ML-powered forecasting platforms, offline transaction systems, infrastructure intelligence tools, real-time communication platforms, and network simulation engines.
 
-My projects range from network routing simulators and real-time communication platforms to offline payment systems, infrastructure intelligence tools, and ML-powered forecasting platforms. I'm particularly interested in turning ideas into production-ready systems rather than stopping at prototypes or notebooks.
+I work across the stack — from designing distributed architectures and backend services to developing machine learning pipelines and deploying end-to-end applications.
 
-I enjoy working across the stack — designing APIs, building distributed backends, training and deploying ML models, and creating interfaces that make complex systems easier to understand.
+Technical interests:
+• Distributed Systems
+• Backend Engineering
+• Machine Learning & Applied AI
+• System Design
+• Forecasting & Optimization
+• Data Infrastructure
 
-Lately, I've been exploring:
-- Machine Learning & Applied AI
-- Distributed Systems & Backend Engineering
-- Forecasting, Optimization & Simulation
-- Infrastructure & Data-Driven Decision Systems
 
-When I'm not building, you'll probably find me solving problems on LeetCode, learning a new system design concept, or figuring out why something that worked yesterday suddenly doesn't today.
 </p>
 
 
