@@ -32,12 +32,12 @@ I'm a Computer Science undergraduate who enjoys turning complex ideas into produ
 I work across the stack — from designing distributed architectures and backend services to developing machine learning pipelines and deploying end-to-end applications.
 
 Technical interests:
-• Distributed Systems
-• Backend Engineering
-• Machine Learning & Applied AI
-• System Design
-• Forecasting & Optimization
-• Data Infrastructure
+- Distributed Systems
+- Backend Engineering
+- Machine Learning & Applied AI
+- System Design
+- Forecasting & Optimization
+- Data Infrastructure
 
 
 </p>
