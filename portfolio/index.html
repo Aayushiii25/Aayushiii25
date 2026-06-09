@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aayushi's Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="game-container">
+        <!-- Stage 1: About Me -->
+        <div id="stage-1" class="stage active">
+            <div class="background house-bg"></div>
+            <div class="character pixel-girl"></div>
+            <div class="hotspot door-hotspot" title="Enter House"></div>
+            <div class="dialogue-box" id="dialogue-stage1">
+                <p id="dialogue-text-1"></p>
+                <button class="next-btn hidden" id="next-stage1">Continue</button>
+            </div>
+        </div>
+
+        <!-- Stage 2: Enter House (Transition) -->
+        <div id="stage-2" class="stage">
+            <div class="background house-bg full"></div>
+            <div class="hotspot door-hotspot pulse" title="Enter House" id="enter-door-btn"></div>
+            <div class="dialogue-box center">
+                <p>You've entered Aayushi's digital world ✨</p>
+            </div>
+        </div>
+
+        <!-- Stage 3: Magic Room -->
+        <div id="stage-3" class="stage">
+            <div class="background room-bg"></div>
+            <div class="hotspot pc-hotspot" title="Use PC" id="use-pc-btn"></div>
+            <div class="dialogue-box bottom">
+                <p>Looks like her workstation is running... Click the PC to explore.</p>
+            </div>
+        </div>
+
+        <!-- Stage 4: Boot Sequence & OS Menu -->
+        <div id="stage-4" class="stage">
+            <div class="background room-bg blur"></div>
+            
+            <div id="boot-sequence" class="screen">
+                <p id="boot-text"></p>
+            </div>
+
+            <div id="os-menu" class="screen hidden ui-frame">
+                <h1>Aayushi OS</h1>
+                <div class="menu-options">
+                    <button class="menu-btn" data-target="projects-window">Projects</button>
+                    <button class="menu-btn" data-target="skills-window">Technical Skills</button>
+                    <button class="menu-btn" data-target="connect-window">Connect With Me</button>
+                </div>
+            </div>
+
+            <!-- Modals -->
+            <div id="projects-window" class="modal hidden ui-frame">
+                <button class="close-btn">&times;</button>
+                <h2>Projects</h2>
+                <div id="projects-container" class="scrollable"></div>
+            </div>
+
+            <div id="skills-window" class="modal hidden terminal">
+                <div class="terminal-header">
+                    <span class="dot red"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+                    <span class="title">skills.exe</span>
+                    <button class="close-btn">&times;</button>
+                </div>
+                <div class="terminal-body" id="skills-container"></div>
+            </div>
+
+            <div id="connect-window" class="modal hidden ui-frame">
+                <button class="close-btn">&times;</button>
+                <h2>Connect</h2>
+                <div id="connect-container"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Screen transition overlay -->
+    <div id="transition-overlay"></div>
+
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
