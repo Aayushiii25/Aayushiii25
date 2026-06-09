@@ -139,9 +139,22 @@ Technical interests:
     <img src="https://cultofthepartyparrot.com/parrots/hd/60fpsparrot.gif" width="25" height="25"/>
     <img src="https://cultofthepartyparrot.com/parrots/hd/jumpingparrot.gif" width="25" height="25"/>
     <img src="https://cultofthepartyparrot.com/parrots/hd/opensourceparrot.gif" width="25" height="25"/>
-    
-    
 </div>
-<br><br>
---------------
 
+<br><br>
+
+## 📊 Competitive Programming Statistics
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Aayushiii25/Aayushiii25/main/widgets/dashboard.svg" alt="Competitive Programming Dashboard" width="600" />
+</p>
+<br>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Aayushiii25/Aayushiii25/main/widgets/leetcode.svg" alt="LeetCode Heatmap" width="740" />
+</p>
+<br>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Aayushiii25/Aayushiii25/main/widgets/codeforces.svg" alt="Codeforces Heatmap" width="740" />
+</p>
+
+--------------
