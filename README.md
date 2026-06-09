@@ -15,7 +15,17 @@
 
 ------
 
+# 🎮 Play my Interactive Pixel-Art Portfolio!
 
+<p align="center">
+  <a href="https://aayushiii25.github.io/Aayushiii25/portfolio/index.html" target="_blank">
+    <img src="https://img.shields.io/badge/PLAY%20NOW-Click%20Here-FF4DA6?style=for-the-badge&logo=nintendo&logoColor=white" alt="Play Portfolio">
+  </a>
+</p>
+<p align="center">
+<i>(Note: You must enable GitHub Pages in your repository settings for this link to work)</i>
+</p>
+<br>
 
 # 💫 About Me:
 
