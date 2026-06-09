@@ -91,25 +91,25 @@
     
     <!-- Stats -->
     <text x="0" y="40" class="stat-label">Solved Total:</text>
-    <text x="250" y="40" text-anchor="end" class="stat-highlight">0 / 3957</text>
+    <text x="250" y="40" text-anchor="end" class="stat-highlight">482 / 3957</text>
     
     <!-- Easy -->
     <text x="0" y="65" class="stat-label">Easy:</text>
-    <text x="250" y="65" text-anchor="end" class="stat-val">0 / 949</text>
+    <text x="250" y="65" text-anchor="end" class="stat-val">137 / 949</text>
     <rect x="0" y="72" width="250" height="6" class="bar-bg" />
-    <rect x="0" y="72" width="0" height="6" class="bar-easy" />
+    <rect x="0" y="72" width="36" height="6" class="bar-easy" />
 
     <!-- Medium -->
     <text x="0" y="105" class="stat-label">Medium:</text>
-    <text x="250" y="105" text-anchor="end" class="stat-val">0 / 2066</text>
+    <text x="250" y="105" text-anchor="end" class="stat-val">286 / 2066</text>
     <rect x="0" y="112" width="250" height="6" class="bar-bg" />
-    <rect x="0" y="112" width="0" height="6" class="bar-medium" />
+    <rect x="0" y="112" width="35" height="6" class="bar-medium" />
 
     <!-- Hard -->
     <text x="0" y="145" class="stat-label">Hard:</text>
-    <text x="250" y="145" text-anchor="end" class="stat-val">0 / 942</text>
+    <text x="250" y="145" text-anchor="end" class="stat-val">59 / 942</text>
     <rect x="0" y="152" width="250" height="6" class="bar-bg" />
-    <rect x="0" y="152" width="0" height="6" class="bar-hard" />
+    <rect x="0" y="152" width="16" height="6" class="bar-hard" />
   </g>
 
   <!-- Vertical Divider -->
@@ -147,5 +147,5 @@
   
   <!-- Footer Refreshed Status -->
   <text x="15" y="239" class="footer-text">[SYSTEM STATUS: ONLINE]</text>
-  <text x="585" y="239" text-anchor="end" class="footer-text">REFRESHED: 2026-06-09 15:41 UTC</text>
+  <text x="585" y="239" text-anchor="end" class="footer-text">REFRESHED: 2026-06-09 15:44 UTC</text>
 </svg>
