@@ -17,6 +17,7 @@ jobs:
       LEETCODE_USERNAME: "aayushidhurandhar"
       CODEFORCES_HANDLE: "aayushiiii25"
       THEME: "matrix-green" # Options: matrix-green, cyber-purple, github-dark
+      HIDE_CODEFORCES: "true"
 
     steps:
       - name: Checkout repository

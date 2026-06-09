@@ -51,7 +51,7 @@ THEMES = {
     }
 }
 
-SVG_TEMPLATE = Template("""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 250" width="600" height="250">
+SVG_TEMPLATE = Template("""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 $view_width 250" width="$view_width" height="250">
   <defs>
     <style>
       .bg { fill: $bg; }
@@ -119,9 +119,9 @@ SVG_TEMPLATE = Template("""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 
 
   <!-- Background and Border -->
   <g class="interactive-panel">
-    <rect class="bg" width="598" height="248" x="1" y="1" rx="8" ry="8" />
-    <rect class="glow-border" width="598" height="248" x="1" y="1" rx="8" ry="8" />
-    <rect class="border" width="598" height="248" x="1" y="1" rx="8" ry="8" />
+    <rect class="bg" width="$rect_width" height="248" x="1" y="1" rx="8" ry="8" />
+    <rect class="glow-border" width="$rect_width" height="248" x="1" y="1" rx="8" ry="8" />
+    <rect class="border" width="$rect_width" height="248" x="1" y="1" rx="8" ry="8" />
   </g>
 
   <!-- Terminal Header -->
@@ -132,8 +132,8 @@ SVG_TEMPLATE = Template("""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 
     <circle cx="48" cy="16" r="4.5" fill="#27c93f" />
     
     <!-- Title -->
-    <text x="300" y="20" text-anchor="middle" class="header-text">guest@cp-dashboard:~</text>
-    <line x1="1" y1="32" x2="599" y2="32" class="header-line" />
+    <text x="$title_x" y="20" text-anchor="middle" class="header-text">guest@cp-dashboard:~</text>
+    <line x1="1" y1="32" x2="$line_x2" y2="32" class="header-line" />
   </g>
 
   <!-- Left Column: LeetCode -->
@@ -167,49 +167,55 @@ SVG_TEMPLATE = Template("""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 
     </g>
   </a>
 
-  <!-- Vertical Divider -->
-  <line x1="300" y1="42" x2="300" y2="215" class="header-line" opacity="0.3" />
+  <!-- Vertical Divider & Codeforces Column -->
+  <g $cf_display>
+    <!-- Vertical Divider -->
+    <line x1="300" y1="42" x2="300" y2="215" class="header-line" opacity="0.3" />
 
-  <!-- Right Column: Codeforces -->
-  <a href="https://codeforces.com/profile/$cf_handle" target="_blank">
-    <g transform="translate(325, 50)">
-      <!-- Command Line Prompt -->
-      <text x="0" y="12" class="terminal-prompt">$$ <tspan class="terminal-command">neofetch --codeforces</tspan></text>
-      <line x1="0" y1="20" x2="250" y2="20" class="header-line" opacity="0.3" />
-      
-      <!-- Handle -->
-      <text x="0" y="42" class="stat-label">Handle:</text>
-      <text x="250" y="42" text-anchor="end" class="stat-val">$cf_handle</text>
-      
-      <!-- Solved Count -->
-      <text x="0" y="72" class="stat-label">Solved Total:</text>
-      <text x="250" y="72" text-anchor="end" class="stat-highlight">$cf_solved</text>
-      
-      <!-- Current Rating / Rank -->
-      <text x="0" y="102" class="stat-label">Current Rating:</text>
-      <text x="250" y="102" text-anchor="end" class="stat-val">$cf_rating ($cf_rank)</text>
-      
-      <!-- Max Rating / Rank -->
-      <text x="0" y="132" class="stat-label">Max Rating:</text>
-      <text x="250" y="132" text-anchor="end" class="stat-val">$cf_max_rating ($cf_max_rank)</text>
-      
-      <!-- Status Log -->
-      <text x="0" y="162" class="stat-label">System State:</text>
-      <text x="250" y="162" text-anchor="end" class="stat-val" fill="$accent" filter="url(#glow-soft)" opacity="0.95">ACTIVE</text>
-    </g>
-  </a>
+    <!-- Right Column: Codeforces -->
+    <a href="https://codeforces.com/profile/$cf_handle" target="_blank">
+      <g transform="translate(325, 50)">
+        <!-- Command Line Prompt -->
+        <text x="0" y="12" class="terminal-prompt">$$ <tspan class="terminal-command">neofetch --codeforces</tspan></text>
+        <line x1="0" y1="20" x2="250" y2="20" class="header-line" opacity="0.3" />
+        
+        <!-- Handle -->
+        <text x="0" y="42" class="stat-label">Handle:</text>
+        <text x="250" y="42" text-anchor="end" class="stat-val">$cf_handle</text>
+        
+        <!-- Solved Count -->
+        <text x="0" y="72" class="stat-label">Solved Total:</text>
+        <text x="250" y="72" text-anchor="end" class="stat-highlight">$cf_solved</text>
+        
+        <!-- Current Rating / Rank -->
+        <text x="0" y="102" class="stat-label">Current Rating:</text>
+        <text x="250" y="102" text-anchor="end" class="stat-val">$cf_rating ($cf_rank)</text>
+        
+        <!-- Max Rating / Rank -->
+        <text x="0" y="132" class="stat-label">Max Rating:</text>
+        <text x="250" y="132" text-anchor="end" class="stat-val">$cf_max_rating ($cf_max_rank)</text>
+        
+        <!-- Status Log -->
+        <text x="0" y="162" class="stat-label">System State:</text>
+        <text x="250" y="162" text-anchor="end" class="stat-val" fill="$accent" filter="url(#glow-soft)" opacity="0.95">ACTIVE</text>
+      </g>
+    </a>
+  </g>
 
   <!-- Footer Line -->
-  <line x1="1" y1="225" x2="599" y2="225" class="header-line" />
+  <line x1="1" y1="225" x2="$line_x2" y2="225" class="header-line" />
   
   <!-- Footer Refreshed Status -->
   <text x="15" y="239" class="footer-text">[SYSTEM STATUS: ONLINE]</text>
-  <text x="585" y="239" text-anchor="end" class="footer-text">REFRESHED: $refreshed_time</text>
+  <text x="$footer_x" y="239" text-anchor="end" class="footer-text">REFRESHED: $refreshed_time</text>
 </svg>""")
 
 def build_dashboard(theme_name):
     # Determine the theme dictionary
     theme = THEMES.get(theme_name, THEMES["matrix-green"])
+
+    # Configuration flag: check HIDE_CODEFORCES from environment (default to true)
+    hide_cf = os.environ.get("HIDE_CODEFORCES", "true").lower() == "true"
 
     # Load LeetCode cached data
     leetcode_path = "data/leetcode_data.json"
@@ -247,6 +253,22 @@ def build_dashboard(theme_name):
     # Formatter for timestamps
     refreshed_time = datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
 
+    # Set up layout variables based on hide_cf flag
+    if hide_cf:
+        view_width = 300
+        rect_width = 298
+        title_x = 150
+        line_x2 = 299
+        cf_display = 'display="none"'
+        footer_x = 285
+    else:
+        view_width = 600
+        rect_width = 598
+        title_x = 300
+        line_x2 = 599
+        cf_display = ''
+        footer_x = 585
+
     # Render template values
     svg_content = SVG_TEMPLATE.substitute(
         bg=theme["bg"],
@@ -259,6 +281,12 @@ def build_dashboard(theme_name):
         easy=theme["easy"],
         medium=theme["medium"],
         hard=theme["hard"],
+        view_width=view_width,
+        rect_width=rect_width,
+        title_x=title_x,
+        line_x2=line_x2,
+        cf_display=cf_display,
+        footer_x=footer_x,
         solved_all=lc.get("solved_all", 0),
         total_questions=lc.get("total_questions", 0),
         solved_easy=lc.get("solved_easy", 0),

@@ -146,7 +146,7 @@ Technical interests:
 ## 📊 Competitive Programming Statistics
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Aayushiii25/Aayushiii25/main/widgets/dashboard.svg" alt="Competitive Programming Dashboard" width="600" />
+  <img src="https://raw.githubusercontent.com/Aayushiii25/Aayushiii25/main/widgets/dashboard.svg" alt="Competitive Programming Dashboard" width="300" />
 </p>
 <br>
 <p align="center">
@@ -154,12 +154,14 @@ Technical interests:
     <img src="https://raw.githubusercontent.com/Aayushiii25/Aayushiii25/main/widgets/leetcode.svg" alt="LeetCode Heatmap" width="740" />
   </a>
 </p>
+<!--
 <br>
 <p align="center">
   <a href="https://codeforces.com/profile/aayushiiii25" target="_blank">
     <img src="https://raw.githubusercontent.com/Aayushiii25/Aayushiii25/main/widgets/codeforces.svg" alt="Codeforces Heatmap" width="740" />
   </a>
 </p>
+-->
 
 --------------
 
