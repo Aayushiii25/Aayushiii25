@@ -81,9 +81,9 @@ body {
     bottom: 20%;
     left: 50%;
     transform: translateX(-50%);
-    width: 250px;
-    height: 250px;
-    background-image: url('../assets/pixel-girl.png');
+    width: 400px;
+    height: 400px;
+    background-image: url('../assets/pixel-girl-v2.png');
     background-size: contain;
     background-repeat: no-repeat;
     image-rendering: pixelated;
