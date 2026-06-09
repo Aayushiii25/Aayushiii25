@@ -150,11 +150,16 @@ Technical interests:
 </p>
 <br>
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Aayushiii25/Aayushiii25/main/widgets/leetcode.svg" alt="LeetCode Heatmap" width="740" />
+  <a href="https://leetcode.com/u/aayushidhurandhar" target="_blank">
+    <img src="https://raw.githubusercontent.com/Aayushiii25/Aayushiii25/main/widgets/leetcode.svg" alt="LeetCode Heatmap" width="740" />
+  </a>
 </p>
 <br>
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Aayushiii25/Aayushiii25/main/widgets/codeforces.svg" alt="Codeforces Heatmap" width="740" />
+  <a href="https://codeforces.com/profile/aayushiiii25" target="_blank">
+    <img src="https://raw.githubusercontent.com/Aayushiii25/Aayushiii25/main/widgets/codeforces.svg" alt="Codeforces Heatmap" width="740" />
+  </a>
 </p>
 
 --------------
+

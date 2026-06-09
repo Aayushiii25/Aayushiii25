@@ -84,68 +84,72 @@
   </g>
 
   <!-- Left Column: LeetCode -->
-  <g transform="translate(25, 50)">
-    <!-- Command Line Prompt -->
-    <text x="0" y="12" class="terminal-prompt">$ <tspan class="terminal-command">cat leetcode.json</tspan></text>
-    <line x1="0" y1="20" x2="250" y2="20" class="header-line" opacity="0.3" />
-    
-    <!-- Stats -->
-    <text x="0" y="40" class="stat-label">Solved Total:</text>
-    <text x="250" y="40" text-anchor="end" class="stat-highlight">482 / 3957</text>
-    
-    <!-- Easy -->
-    <text x="0" y="65" class="stat-label">Easy:</text>
-    <text x="250" y="65" text-anchor="end" class="stat-val">137 / 949</text>
-    <rect x="0" y="72" width="250" height="6" class="bar-bg" />
-    <rect x="0" y="72" width="36" height="6" class="bar-easy" />
+  <a href="https://leetcode.com/u/aayushidhurandhar" target="_blank">
+    <g transform="translate(25, 50)">
+      <!-- Command Line Prompt -->
+      <text x="0" y="12" class="terminal-prompt">$ <tspan class="terminal-command">cat leetcode.json</tspan></text>
+      <line x1="0" y1="20" x2="250" y2="20" class="header-line" opacity="0.3" />
+      
+      <!-- Stats -->
+      <text x="0" y="40" class="stat-label">Solved Total:</text>
+      <text x="250" y="40" text-anchor="end" class="stat-highlight">482 / 3957</text>
+      
+      <!-- Easy -->
+      <text x="0" y="65" class="stat-label">Easy:</text>
+      <text x="250" y="65" text-anchor="end" class="stat-val">137 / 949</text>
+      <rect x="0" y="72" width="250" height="6" class="bar-bg" />
+      <rect x="0" y="72" width="36" height="6" class="bar-easy" />
 
-    <!-- Medium -->
-    <text x="0" y="105" class="stat-label">Medium:</text>
-    <text x="250" y="105" text-anchor="end" class="stat-val">286 / 2066</text>
-    <rect x="0" y="112" width="250" height="6" class="bar-bg" />
-    <rect x="0" y="112" width="35" height="6" class="bar-medium" />
+      <!-- Medium -->
+      <text x="0" y="105" class="stat-label">Medium:</text>
+      <text x="250" y="105" text-anchor="end" class="stat-val">286 / 2066</text>
+      <rect x="0" y="112" width="250" height="6" class="bar-bg" />
+      <rect x="0" y="112" width="35" height="6" class="bar-medium" />
 
-    <!-- Hard -->
-    <text x="0" y="145" class="stat-label">Hard:</text>
-    <text x="250" y="145" text-anchor="end" class="stat-val">59 / 942</text>
-    <rect x="0" y="152" width="250" height="6" class="bar-bg" />
-    <rect x="0" y="152" width="16" height="6" class="bar-hard" />
-  </g>
+      <!-- Hard -->
+      <text x="0" y="145" class="stat-label">Hard:</text>
+      <text x="250" y="145" text-anchor="end" class="stat-val">59 / 942</text>
+      <rect x="0" y="152" width="250" height="6" class="bar-bg" />
+      <rect x="0" y="152" width="16" height="6" class="bar-hard" />
+    </g>
+  </a>
 
   <!-- Vertical Divider -->
   <line x1="300" y1="42" x2="300" y2="215" class="header-line" opacity="0.3" />
 
   <!-- Right Column: Codeforces -->
-  <g transform="translate(325, 50)">
-    <!-- Command Line Prompt -->
-    <text x="0" y="12" class="terminal-prompt">$ <tspan class="terminal-command">neofetch --codeforces</tspan></text>
-    <line x1="0" y1="20" x2="250" y2="20" class="header-line" opacity="0.3" />
-    
-    <!-- Handle -->
-    <text x="0" y="42" class="stat-label">Handle:</text>
-    <text x="250" y="42" text-anchor="end" class="stat-val">aayushiiii25</text>
-    
-    <!-- Solved Count -->
-    <text x="0" y="72" class="stat-label">Solved Total:</text>
-    <text x="250" y="72" text-anchor="end" class="stat-highlight">17</text>
-    
-    <!-- Current Rating / Rank -->
-    <text x="0" y="102" class="stat-label">Current Rating:</text>
-    <text x="250" y="102" text-anchor="end" class="stat-val">0 (Unrated)</text>
-    
-    <!-- Max Rating / Rank -->
-    <text x="0" y="132" class="stat-label">Max Rating:</text>
-    <text x="250" y="132" text-anchor="end" class="stat-val">0 (Unrated)</text>
-    
-    <!-- Status Log -->
-    <text x="0" y="162" class="stat-label">System State:</text>
-    <text x="250" y="162" text-anchor="end" class="stat-val" fill="#39ff14" filter="url(#glow-soft)" opacity="0.95">ACTIVE</text>
-  </g>
+  <a href="https://codeforces.com/profile/aayushiiii25" target="_blank">
+    <g transform="translate(325, 50)">
+      <!-- Command Line Prompt -->
+      <text x="0" y="12" class="terminal-prompt">$ <tspan class="terminal-command">neofetch --codeforces</tspan></text>
+      <line x1="0" y1="20" x2="250" y2="20" class="header-line" opacity="0.3" />
+      
+      <!-- Handle -->
+      <text x="0" y="42" class="stat-label">Handle:</text>
+      <text x="250" y="42" text-anchor="end" class="stat-val">aayushiiii25</text>
+      
+      <!-- Solved Count -->
+      <text x="0" y="72" class="stat-label">Solved Total:</text>
+      <text x="250" y="72" text-anchor="end" class="stat-highlight">17</text>
+      
+      <!-- Current Rating / Rank -->
+      <text x="0" y="102" class="stat-label">Current Rating:</text>
+      <text x="250" y="102" text-anchor="end" class="stat-val">0 (Unrated)</text>
+      
+      <!-- Max Rating / Rank -->
+      <text x="0" y="132" class="stat-label">Max Rating:</text>
+      <text x="250" y="132" text-anchor="end" class="stat-val">0 (Unrated)</text>
+      
+      <!-- Status Log -->
+      <text x="0" y="162" class="stat-label">System State:</text>
+      <text x="250" y="162" text-anchor="end" class="stat-val" fill="#39ff14" filter="url(#glow-soft)" opacity="0.95">ACTIVE</text>
+    </g>
+  </a>
 
   <!-- Footer Line -->
   <line x1="1" y1="225" x2="599" y2="225" class="header-line" />
   
   <!-- Footer Refreshed Status -->
   <text x="15" y="239" class="footer-text">[SYSTEM STATUS: ONLINE]</text>
-  <text x="585" y="239" text-anchor="end" class="footer-text">REFRESHED: 2026-06-09 15:44 UTC</text>
+  <text x="585" y="239" text-anchor="end" class="footer-text">REFRESHED: 2026-06-09 15:51 UTC</text>
 </svg>

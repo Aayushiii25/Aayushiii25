@@ -89,56 +89,58 @@ SVG_TEMPLATE = Template("""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 
   </defs>
 
   <!-- Background and Border -->
-  <g class="interactive-panel">
-    <rect class="bg" width="738" height="168" x="1" y="1" rx="8" ry="8" />
-    <rect class="glow-border" width="738" height="168" x="1" y="1" rx="8" ry="8" />
-    <rect class="border" width="738" height="168" x="1" y="1" rx="8" ry="8" />
-  </g>
-
-  <!-- Terminal Header -->
-  <g>
-    <circle cx="20" cy="16" r="4.5" fill="#ff5f56" />
-    <circle cx="34" cy="16" r="4.5" fill="#ffbd2e" />
-    <circle cx="48" cy="16" r="4.5" fill="#27c93f" />
-    <text x="370" y="20" text-anchor="middle" class="header-text">$handle@codeforces-heatmap:~</text>
-    <line x1="1" y1="32" x2="739" y2="32" class="header-line" />
-  </g>
-
-  <!-- Month Labels -->
-  <g transform="translate(35, 0)">
-    $month_labels_svg
-  </g>
-
-  <!-- Day Labels (Mon, Wed, Fri) -->
-  <g>
-    <text x="18" y="69" class="label-text" text-anchor="middle">Mon</text>
-    <text x="18" y="95" class="label-text" text-anchor="middle">Wed</text>
-    <text x="18" y="121" class="label-text" text-anchor="middle">Fri</text>
-  </g>
-
-  <!-- Heatmap Grid -->
-  <g transform="translate(35, 48)">
-    $cells_svg
-  </g>
-
-  <!-- Footer Stats and Legend -->
-  <g transform="translate(15, 152)">
-    <!-- Solved count summary -->
-    <text x="0" y="0" class="stats-text">$total_accepted accepted submissions in the last year</text>
-    
-    <!-- Legend -->
-    <g transform="translate(560, -9)">
-      <text x="-32" y="8" class="legend-text" text-anchor="end">Less</text>
-      <rect x="-24" y="0" width="8" height="8" rx="1.5" fill="$level_0" />
-      <rect x="-13" y="0" width="8" height="8" rx="1.5" fill="$level_1" />
-      <rect x="-2" y="0" width="8" height="8" rx="1.5" fill="$level_2" />
-      <rect x="9" y="0" width="8" height="8" rx="1.5" fill="$level_3" />
-      <rect x="20" y="0" width="8" height="8" rx="1.5" fill="$level_4" />
-      <text x="34" y="8" class="legend-text" text-anchor="start">More</text>
+  <a href="https://codeforces.com/profile/$handle" target="_blank">
+    <g class="interactive-panel">
+      <rect class="bg" width="738" height="168" x="1" y="1" rx="8" ry="8" />
+      <rect class="glow-border" width="738" height="168" x="1" y="1" rx="8" ry="8" />
+      <rect class="border" width="738" height="168" x="1" y="1" rx="8" ry="8" />
     </g>
-    
-    <text x="355" y="0" text-anchor="middle" class="footer-text">REFRESHED: $refreshed_time</text>
-  </g>
+
+    <!-- Terminal Header -->
+    <g>
+      <circle cx="20" cy="16" r="4.5" fill="#ff5f56" />
+      <circle cx="34" cy="16" r="4.5" fill="#ffbd2e" />
+      <circle cx="48" cy="16" r="4.5" fill="#27c93f" />
+      <text x="370" y="20" text-anchor="middle" class="header-text">$handle@codeforces-heatmap:~</text>
+      <line x1="1" y1="32" x2="739" y2="32" class="header-line" />
+    </g>
+
+    <!-- Month Labels -->
+    <g transform="translate(35, 0)">
+      $month_labels_svg
+    </g>
+
+    <!-- Day Labels (Mon, Wed, Fri) -->
+    <g>
+      <text x="18" y="69" class="label-text" text-anchor="middle">Mon</text>
+      <text x="18" y="95" class="label-text" text-anchor="middle">Wed</text>
+      <text x="18" y="121" class="label-text" text-anchor="middle">Fri</text>
+    </g>
+
+    <!-- Heatmap Grid -->
+    <g transform="translate(35, 48)">
+      $cells_svg
+    </g>
+
+    <!-- Footer Stats and Legend -->
+    <g transform="translate(15, 152)">
+      <!-- Solved count summary -->
+      <text x="0" y="0" class="stats-text">$total_accepted accepted submissions in the last year</text>
+      
+      <!-- Legend -->
+      <g transform="translate(560, -9)">
+        <text x="-32" y="8" class="legend-text" text-anchor="end">Less</text>
+        <rect x="-24" y="0" width="8" height="8" rx="1.5" fill="$level_0" />
+        <rect x="-13" y="0" width="8" height="8" rx="1.5" fill="$level_1" />
+        <rect x="-2" y="0" width="8" height="8" rx="1.5" fill="$level_2" />
+        <rect x="9" y="0" width="8" height="8" rx="1.5" fill="$level_3" />
+        <rect x="20" y="0" width="8" height="8" rx="1.5" fill="$level_4" />
+        <text x="34" y="8" class="legend-text" text-anchor="start">More</text>
+      </g>
+      
+      <text x="355" y="0" text-anchor="middle" class="footer-text">REFRESHED: $refreshed_time</text>
+    </g>
+  </a>
 </svg>""")
 
 def build_codeforces_heatmap(theme_name):

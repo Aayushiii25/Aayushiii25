@@ -137,63 +137,67 @@ SVG_TEMPLATE = Template("""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 
   </g>
 
   <!-- Left Column: LeetCode -->
-  <g transform="translate(25, 50)">
-    <!-- Command Line Prompt -->
-    <text x="0" y="12" class="terminal-prompt">$$ <tspan class="terminal-command">cat leetcode.json</tspan></text>
-    <line x1="0" y1="20" x2="250" y2="20" class="header-line" opacity="0.3" />
-    
-    <!-- Stats -->
-    <text x="0" y="40" class="stat-label">Solved Total:</text>
-    <text x="250" y="40" text-anchor="end" class="stat-highlight">$solved_all / $total_questions</text>
-    
-    <!-- Easy -->
-    <text x="0" y="65" class="stat-label">Easy:</text>
-    <text x="250" y="65" text-anchor="end" class="stat-val">$solved_easy / $total_easy</text>
-    <rect x="0" y="72" width="250" height="6" class="bar-bg" />
-    <rect x="0" y="72" width="$easy_width" height="6" class="bar-easy" />
+  <a href="https://leetcode.com/u/$lc_username" target="_blank">
+    <g transform="translate(25, 50)">
+      <!-- Command Line Prompt -->
+      <text x="0" y="12" class="terminal-prompt">$$ <tspan class="terminal-command">cat leetcode.json</tspan></text>
+      <line x1="0" y1="20" x2="250" y2="20" class="header-line" opacity="0.3" />
+      
+      <!-- Stats -->
+      <text x="0" y="40" class="stat-label">Solved Total:</text>
+      <text x="250" y="40" text-anchor="end" class="stat-highlight">$solved_all / $total_questions</text>
+      
+      <!-- Easy -->
+      <text x="0" y="65" class="stat-label">Easy:</text>
+      <text x="250" y="65" text-anchor="end" class="stat-val">$solved_easy / $total_easy</text>
+      <rect x="0" y="72" width="250" height="6" class="bar-bg" />
+      <rect x="0" y="72" width="$easy_width" height="6" class="bar-easy" />
 
-    <!-- Medium -->
-    <text x="0" y="105" class="stat-label">Medium:</text>
-    <text x="250" y="105" text-anchor="end" class="stat-val">$solved_medium / $total_medium</text>
-    <rect x="0" y="112" width="250" height="6" class="bar-bg" />
-    <rect x="0" y="112" width="$medium_width" height="6" class="bar-medium" />
+      <!-- Medium -->
+      <text x="0" y="105" class="stat-label">Medium:</text>
+      <text x="250" y="105" text-anchor="end" class="stat-val">$solved_medium / $total_medium</text>
+      <rect x="0" y="112" width="250" height="6" class="bar-bg" />
+      <rect x="0" y="112" width="$medium_width" height="6" class="bar-medium" />
 
-    <!-- Hard -->
-    <text x="0" y="145" class="stat-label">Hard:</text>
-    <text x="250" y="145" text-anchor="end" class="stat-val">$solved_hard / $total_hard</text>
-    <rect x="0" y="152" width="250" height="6" class="bar-bg" />
-    <rect x="0" y="152" width="$hard_width" height="6" class="bar-hard" />
-  </g>
+      <!-- Hard -->
+      <text x="0" y="145" class="stat-label">Hard:</text>
+      <text x="250" y="145" text-anchor="end" class="stat-val">$solved_hard / $total_hard</text>
+      <rect x="0" y="152" width="250" height="6" class="bar-bg" />
+      <rect x="0" y="152" width="$hard_width" height="6" class="bar-hard" />
+    </g>
+  </a>
 
   <!-- Vertical Divider -->
   <line x1="300" y1="42" x2="300" y2="215" class="header-line" opacity="0.3" />
 
   <!-- Right Column: Codeforces -->
-  <g transform="translate(325, 50)">
-    <!-- Command Line Prompt -->
-    <text x="0" y="12" class="terminal-prompt">$$ <tspan class="terminal-command">neofetch --codeforces</tspan></text>
-    <line x1="0" y1="20" x2="250" y2="20" class="header-line" opacity="0.3" />
-    
-    <!-- Handle -->
-    <text x="0" y="42" class="stat-label">Handle:</text>
-    <text x="250" y="42" text-anchor="end" class="stat-val">$cf_handle</text>
-    
-    <!-- Solved Count -->
-    <text x="0" y="72" class="stat-label">Solved Total:</text>
-    <text x="250" y="72" text-anchor="end" class="stat-highlight">$cf_solved</text>
-    
-    <!-- Current Rating / Rank -->
-    <text x="0" y="102" class="stat-label">Current Rating:</text>
-    <text x="250" y="102" text-anchor="end" class="stat-val">$cf_rating ($cf_rank)</text>
-    
-    <!-- Max Rating / Rank -->
-    <text x="0" y="132" class="stat-label">Max Rating:</text>
-    <text x="250" y="132" text-anchor="end" class="stat-val">$cf_max_rating ($cf_max_rank)</text>
-    
-    <!-- Status Log -->
-    <text x="0" y="162" class="stat-label">System State:</text>
-    <text x="250" y="162" text-anchor="end" class="stat-val" fill="$accent" filter="url(#glow-soft)" opacity="0.95">ACTIVE</text>
-  </g>
+  <a href="https://codeforces.com/profile/$cf_handle" target="_blank">
+    <g transform="translate(325, 50)">
+      <!-- Command Line Prompt -->
+      <text x="0" y="12" class="terminal-prompt">$$ <tspan class="terminal-command">neofetch --codeforces</tspan></text>
+      <line x1="0" y1="20" x2="250" y2="20" class="header-line" opacity="0.3" />
+      
+      <!-- Handle -->
+      <text x="0" y="42" class="stat-label">Handle:</text>
+      <text x="250" y="42" text-anchor="end" class="stat-val">$cf_handle</text>
+      
+      <!-- Solved Count -->
+      <text x="0" y="72" class="stat-label">Solved Total:</text>
+      <text x="250" y="72" text-anchor="end" class="stat-highlight">$cf_solved</text>
+      
+      <!-- Current Rating / Rank -->
+      <text x="0" y="102" class="stat-label">Current Rating:</text>
+      <text x="250" y="102" text-anchor="end" class="stat-val">$cf_rating ($cf_rank)</text>
+      
+      <!-- Max Rating / Rank -->
+      <text x="0" y="132" class="stat-label">Max Rating:</text>
+      <text x="250" y="132" text-anchor="end" class="stat-val">$cf_max_rating ($cf_max_rank)</text>
+      
+      <!-- Status Log -->
+      <text x="0" y="162" class="stat-label">System State:</text>
+      <text x="250" y="162" text-anchor="end" class="stat-val" fill="$accent" filter="url(#glow-soft)" opacity="0.95">ACTIVE</text>
+    </g>
+  </a>
 
   <!-- Footer Line -->
   <line x1="1" y1="225" x2="599" y2="225" class="header-line" />
@@ -266,6 +270,7 @@ def build_dashboard(theme_name):
         solved_hard=lc.get("solved_hard", 0),
         total_hard=lc.get("total_hard", 0),
         hard_width=hard_width,
+        lc_username=lc.get("username", "N/A"),
         cf_handle=cf.get("handle", "N/A"),
         cf_solved=cf.get("solved_count", 0),
         cf_rating=cf.get("rating", 0),
