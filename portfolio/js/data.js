@@ -31,7 +31,7 @@ const portfolioData = {
 
     links: [
         { name: "GitHub", url: "https://github.com/Aayushiii25" },
-        { name: "LinkedIn", url: "https://linkedin.com/in/aayushidhurandhar" },
+        { name: "LinkedIn", url: "https://www.linkedin.com/in/aayushi-dhurandhar-6b838536b/" },
         { name: "LeetCode", url: "https://leetcode.com/u/aayushidhurandhar" },
         { name: "Codeforces", url: "https://codeforces.com/profile/aayushiiii25" },
         { name: "Email", url: "mailto:aayushidhurandhar@example.com" }
