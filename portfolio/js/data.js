@@ -1,5 +1,5 @@
 const portfolioData = {
-    dialogue: "Hey! I'm Aayushi 👋\n\nA Computer Science student who loves building software, AI applications and creative projects.\n\nI enjoy turning ideas into products, exploring full-stack development, machine learning and open source.",
+    dialogue: `Building scalable systems at the intersection of Software Engineering, Machine Learning, and Distributed Computing.\n\nI'm a Computer Science undergraduate who enjoys turning complex ideas into production-ready systems. My projects include ML-powered forecasting platforms, offline transaction systems, infrastructure intelligence tools, real-time communication platforms, and network simulation engines.\n\nI work across the stack — from designing distributed architectures and backend services to developing machine learning pipelines and deploying end-to-end applications.\n\nTechnical interests:\n- Distributed Systems\n- Backend Engineering\n- Machine Learning & Applied AI\n- System Design\n- Forecasting & Optimization\n- Data Infrastructure`,
     
     projects: [
         {
