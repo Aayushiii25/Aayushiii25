@@ -18,10 +18,6 @@
 # 💫 About Me
 
 
-.house {
-   cursor: pointer;
-   animation: float 3s ease-in-out infinite;
-}
 
 <p align="center">
   <a href="https://aayushiii25.github.io/Aayushiii25/portfolio/index.html" target="_blank">
