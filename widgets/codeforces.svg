@@ -443,7 +443,7 @@
     <rect class="cell cell-active" x="676" y="13" width="10" height="10" rx="2" ry="2" fill="#161b22" data-date="2026-06-08" data-count="0" data-col="52" data-row="1" />
     <rect class="cell cell-active" x="676" y="26" width="10" height="10" rx="2" ry="2" fill="#161b22" data-date="2026-06-09" data-count="0" data-col="52" data-row="2" />
     <rect class="cell cell-active" x="676" y="39" width="10" height="10" rx="2" ry="2" fill="#161b22" data-date="2026-06-10" data-count="0" data-col="52" data-row="3" />
-    <rect class="cell cell-future" x="676" y="52" width="10" height="10" rx="2" ry="2" fill="#161b22" data-date="2026-06-11" data-count="0" data-col="52" data-row="4" />
+    <rect class="cell cell-active" x="676" y="52" width="10" height="10" rx="2" ry="2" fill="#161b22" data-date="2026-06-11" data-count="0" data-col="52" data-row="4" />
     <rect class="cell cell-future" x="676" y="65" width="10" height="10" rx="2" ry="2" fill="#161b22" data-date="2026-06-12" data-count="0" data-col="52" data-row="5" />
     <rect class="cell cell-future" x="676" y="78" width="10" height="10" rx="2" ry="2" fill="#161b22" data-date="2026-06-13" data-count="0" data-col="52" data-row="6" />
     </g>
@@ -464,7 +464,7 @@
         <text x="34" y="8" class="legend-text" text-anchor="start">More</text>
       </g>
       
-      <text x="355" y="0" text-anchor="middle" class="footer-text">REFRESHED: 2026-06-10 14:49 UTC</text>
+      <text x="355" y="0" text-anchor="middle" class="footer-text">REFRESHED: 2026-06-11 02:33 UTC</text>
     </g>
   </a>
 </svg>
