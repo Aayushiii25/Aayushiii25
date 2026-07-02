@@ -153,8 +153,9 @@ Technical interests:
 
 <br><br>
 
-## 📊 Competitive Programming Statistics
+
 <!--
+## 📊 Competitive Programming Statistics
 <p align="center">
   <img src="https://raw.githubusercontent.com/Aayushiii25/Aayushiii25/main/widgets/dashboard.svg" alt="Competitive Programming Dashboard" width="300" />
 </p>
