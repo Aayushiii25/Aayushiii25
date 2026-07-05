@@ -92,23 +92,23 @@
       
       <!-- Stats -->
       <text x="0" y="40" class="stat-label">Solved Total:</text>
-      <text x="250" y="40" text-anchor="end" class="stat-highlight">504 / 3981</text>
+      <text x="250" y="40" text-anchor="end" class="stat-highlight">504 / 3985</text>
       
       <!-- Easy -->
       <text x="0" y="65" class="stat-label">Easy:</text>
-      <text x="250" y="65" text-anchor="end" class="stat-val">138 / 952</text>
+      <text x="250" y="65" text-anchor="end" class="stat-val">138 / 953</text>
       <rect x="0" y="72" width="250" height="6" class="bar-bg" />
       <rect x="0" y="72" width="36" height="6" class="bar-easy" />
 
       <!-- Medium -->
       <text x="0" y="105" class="stat-label">Medium:</text>
-      <text x="250" y="105" text-anchor="end" class="stat-val">299 / 2079</text>
+      <text x="250" y="105" text-anchor="end" class="stat-val">299 / 2081</text>
       <rect x="0" y="112" width="250" height="6" class="bar-bg" />
       <rect x="0" y="112" width="36" height="6" class="bar-medium" />
 
       <!-- Hard -->
       <text x="0" y="145" class="stat-label">Hard:</text>
-      <text x="250" y="145" text-anchor="end" class="stat-val">67 / 950</text>
+      <text x="250" y="145" text-anchor="end" class="stat-val">67 / 951</text>
       <rect x="0" y="152" width="250" height="6" class="bar-bg" />
       <rect x="0" y="152" width="18" height="6" class="bar-hard" />
     </g>
@@ -154,5 +154,5 @@
   
   <!-- Footer Refreshed Status -->
   <text x="15" y="239" class="footer-text">[SYSTEM STATUS: ONLINE]</text>
-  <text x="285" y="239" text-anchor="end" class="footer-text">REFRESHED: 2026-07-05 01:54 UTC</text>
+  <text x="285" y="239" text-anchor="end" class="footer-text">REFRESHED: 2026-07-05 13:03 UTC</text>
 </svg>
