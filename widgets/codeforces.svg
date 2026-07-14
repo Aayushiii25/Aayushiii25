@@ -441,7 +441,7 @@
     <rect class="cell cell-active" x="663" y="78" width="10" height="10" rx="2" ry="2" fill="#161b22" data-date="2026-07-11" data-count="0" data-col="51" data-row="6" />
     <rect class="cell cell-active" x="676" y="0" width="10" height="10" rx="2" ry="2" fill="#161b22" data-date="2026-07-12" data-count="0" data-col="52" data-row="0" />
     <rect class="cell cell-active" x="676" y="13" width="10" height="10" rx="2" ry="2" fill="#161b22" data-date="2026-07-13" data-count="0" data-col="52" data-row="1" />
-    <rect class="cell cell-future" x="676" y="26" width="10" height="10" rx="2" ry="2" fill="#161b22" data-date="2026-07-14" data-count="0" data-col="52" data-row="2" />
+    <rect class="cell cell-active" x="676" y="26" width="10" height="10" rx="2" ry="2" fill="#161b22" data-date="2026-07-14" data-count="0" data-col="52" data-row="2" />
     <rect class="cell cell-future" x="676" y="39" width="10" height="10" rx="2" ry="2" fill="#161b22" data-date="2026-07-15" data-count="0" data-col="52" data-row="3" />
     <rect class="cell cell-future" x="676" y="52" width="10" height="10" rx="2" ry="2" fill="#161b22" data-date="2026-07-16" data-count="0" data-col="52" data-row="4" />
     <rect class="cell cell-future" x="676" y="65" width="10" height="10" rx="2" ry="2" fill="#161b22" data-date="2026-07-17" data-count="0" data-col="52" data-row="5" />
@@ -464,7 +464,7 @@
         <text x="34" y="8" class="legend-text" text-anchor="start">More</text>
       </g>
       
-      <text x="355" y="0" text-anchor="middle" class="footer-text">REFRESHED: 2026-07-13 14:00 UTC</text>
+      <text x="355" y="0" text-anchor="middle" class="footer-text">REFRESHED: 2026-07-14 01:18 UTC</text>
     </g>
   </a>
 </svg>
