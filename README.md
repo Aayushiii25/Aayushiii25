@@ -92,32 +92,6 @@ Technical interests:
 
 ## 📈 Contribution Activity
 
-<!-- Snake animation — will appear once you trigger the workflow manually from Actions tab
-     Go to: https://github.com/Aayushiii25/Aayushiii25/actions → "Generate Snake Animation" → "Run workflow"
-     After it runs, uncomment the block below and remove the img-contribution-chart above.
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Aayushiii25/Aayushiii25/output/github-snake-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Aayushiii25/Aayushiii25/output/github-snake.svg" />
-    <img alt="github-snake" src="https://raw.githubusercontent.com/Aayushiii25/Aayushiii25/output/github-snake.svg" width="800"/>
-  </picture>
-</p>
--->
-
-<!-- GitHub Contribution Chart -->
-<p align="center">
-  <a href="https://github.com/Aayushiii25">
-    <img src="https://ghchart.rshah.org/FF4DA6/Aayushiii25" alt="Aayushi's Contribution Chart" width="800"/>
-  </a>
-</p>
-
-<!-- Profile Summary Cards -->
-<p align="center">
-  <a href="https://github.com/Aayushiii25">
-    <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Aayushiii25&theme=github_dark" alt="Profile Details" width="800"/>
-  </a>
-</p>
-
 <!-- Activity Graph -->
 <p align="center">
   <a href="https://github.com/Aayushiii25">
