@@ -20,8 +20,12 @@
 
 
 <p align="center">
+  <img src="https://raw.githubusercontent.com/Aayushiii25/Aayushiii25/main/widgets/about.svg" alt="About Me — Opening Night Animation" width="800">
+</p>
+
+<!-- === OLD PIXEL GALLERY HIDDEN ===
+<p align="center">
   <a href="https://aayushiii25.github.io/Aayushiii25/portfolio/index.html" target="_blank">
-    <!-- Using your house image as the preview screen! -->
     <img src="https://raw.githubusercontent.com/Aayushiii25/Aayushiii25/main/portfolio/assets/house.png" alt="Interactive Portfolio Screen" width="740">
   </a>
 </p>
@@ -30,6 +34,7 @@
     <img src="https://img.shields.io/badge/🎮_PLAY_MY_DIGITAL_WORLD-Click_the_Screen_to_Enter-FF4DA6?style=for-the-badge" alt="Play Portfolio">
   </a>
 </p>
+=== END OLD PIXEL GALLERY === -->
 
 <!-- === OLD TEXT HIDDEN ===
 <p align="center">

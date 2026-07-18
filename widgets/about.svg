@@ -1,0 +1,431 @@
+<svg viewBox="0 0 1000 600" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     font-family="'JetBrains Mono','Fira Code','SFMono-Regular',Consolas,monospace">
+
+  <!-- =====================================================================
+       ABOUT.SVG — "Opening Night" README animation
+       Pure SMIL / SVG. No JS, no external CSS, no raster assets.
+       Timeline: theatre curtains -> spotlight -> terminal boot sequence
+                 -> typewriter intro -> about-me -> resting cursor (loops)
+       ===================================================================== -->
+
+  <defs>
+
+    <!-- ~~~~~~~~~~ Stage background ~~~~~~~~~~ -->
+    <radialGradient id="stageGlow" cx="50%" cy="42%" r="75%">
+      <stop offset="0%"  stop-color="#161B22"/>
+      <stop offset="55%" stop-color="#0D1117"/>
+      <stop offset="100%" stop-color="#05070A"/>
+    </radialGradient>
+
+    <!-- ~~~~~~~~~~ Spotlight ~~~~~~~~~~ -->
+    <radialGradient id="spotlightGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%"   stop-color="#FFF6D8" stop-opacity="0.75"/>
+      <stop offset="35%"  stop-color="#FFE9A8" stop-opacity="0.30"/>
+      <stop offset="70%"  stop-color="#FFE9A8" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#FFE9A8" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- ~~~~~~~~~~ Velvet curtain, alternating stops fake vertical folds ~~~~~~~~~~ -->
+    <linearGradient id="curtainVelvet" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="560" y2="0">
+      <stop offset="0%"   stop-color="#2C0812"/>
+      <stop offset="4%"   stop-color="#6B1330"/>
+      <stop offset="9%"   stop-color="#3A0A18"/>
+      <stop offset="14%"  stop-color="#7A1838"/>
+      <stop offset="19%"  stop-color="#3A0A18"/>
+      <stop offset="25%"  stop-color="#6B1330"/>
+      <stop offset="30%"  stop-color="#2C0812"/>
+      <stop offset="36%"  stop-color="#7A1838"/>
+      <stop offset="42%"  stop-color="#3A0A18"/>
+      <stop offset="48%"  stop-color="#6B1330"/>
+      <stop offset="54%"  stop-color="#2C0812"/>
+      <stop offset="60%"  stop-color="#7A1838"/>
+      <stop offset="66%"  stop-color="#3A0A18"/>
+      <stop offset="72%"  stop-color="#6B1330"/>
+      <stop offset="78%"  stop-color="#2C0812"/>
+      <stop offset="84%"  stop-color="#7A1838"/>
+      <stop offset="90%"  stop-color="#3A0A18"/>
+      <stop offset="96%"  stop-color="#6B1330"/>
+      <stop offset="100%" stop-color="#2C0812"/>
+    </linearGradient>
+
+    <!-- soft vertical shading so the hem reads darker / grounded -->
+    <linearGradient id="curtainShade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#000000" stop-opacity="0"/>
+      <stop offset="80%"  stop-color="#000000" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.45"/>
+    </linearGradient>
+
+    <!-- ~~~~~~~~~~ Gold trim ~~~~~~~~~~ -->
+    <linearGradient id="goldGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#F4E5A1"/>
+      <stop offset="45%"  stop-color="#D4AF37"/>
+      <stop offset="100%" stop-color="#8A6A14"/>
+    </linearGradient>
+    <linearGradient id="goldGradH" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"   stop-color="#8A6A14"/>
+      <stop offset="50%"  stop-color="#F4E5A1"/>
+      <stop offset="100%" stop-color="#8A6A14"/>
+    </linearGradient>
+
+    <!-- ~~~~~~~~~~ Terminal chrome ~~~~~~~~~~ -->
+    <linearGradient id="terminalBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#12161D"/>
+      <stop offset="100%" stop-color="#0A0D12"/>
+    </linearGradient>
+    <linearGradient id="titleBarGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#20262E"/>
+      <stop offset="100%" stop-color="#161B22"/>
+    </linearGradient>
+    <linearGradient id="barFillGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"   stop-color="#58A6FF"/>
+      <stop offset="100%" stop-color="#3FB950"/>
+    </linearGradient>
+
+    <!-- ~~~~~~~~~~ Filters ~~~~~~~~~~ -->
+    <filter id="softShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="14" stdDeviation="22" flood-color="#000000" flood-opacity="0.55"/>
+    </filter>
+    <filter id="curtainShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="16" flood-color="#000000" flood-opacity="0.6"/>
+    </filter>
+    <filter id="softBlur" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6"/>
+    </filter>
+    <filter id="tinyGlow" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="1.4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- ~~~~~~~~~~ Clip: rounded terminal window ~~~~~~~~~~ -->
+    <clipPath id="termClip">
+      <rect x="140" y="65" width="720" height="492" rx="16"/>
+    </clipPath>
+
+    <!-- ~~~~~~~~~~ Reusable symbols ~~~~~~~~~~ -->
+    <symbol id="tasselSym" overflow="visible">
+      <line x1="0" y1="0" x2="0" y2="34" stroke="url(#goldGradH)" stroke-width="2"/>
+      <circle cx="0" cy="34" r="3" fill="url(#goldGrad)"/>
+      <ellipse cx="0" cy="46" rx="6" ry="12" fill="url(#goldGrad)"/>
+      <line x1="-4" y1="56" x2="-5" y2="70" stroke="#D4AF37" stroke-width="1.4"/>
+      <line x1="0"  y1="58" x2="0"  y2="73" stroke="#F4E5A1" stroke-width="1.4"/>
+      <line x1="4"  y1="56" x2="5"  y2="70" stroke="#D4AF37" stroke-width="1.4"/>
+    </symbol>
+
+    <symbol id="checkSym" overflow="visible">
+      <path d="M-6,0 L-2,4.5 L7,-7" fill="none" stroke="#3FB950" stroke-width="2.4"
+            stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+
+    <symbol id="bulletSym" overflow="visible">
+      <circle cx="0" cy="-4" r="2.4" fill="#58A6FF"/>
+    </symbol>
+
+  </defs>
+
+  <!-- =====================================================================
+       LAYER 0 — Stage background
+       ===================================================================== -->
+  <rect x="0" y="0" width="1000" height="600" fill="#0D1117"/>
+  <rect x="0" y="0" width="1000" height="600" fill="url(#stageGlow)"/>
+
+  <!-- =====================================================================
+       LAYER 1 — Spotlight (fades in at 0.8s, breathes gently forever after)
+       ===================================================================== -->
+  <g id="spotlight" opacity="0">
+    <animate attributeName="opacity" begin="0.8s" dur="1s" fill="freeze"
+              calcMode="spline" keyTimes="0;1" keySplines="0.25 0.1 0.25 1" values="0;0.6"/>
+    <animate attributeName="opacity" begin="1.8s" dur="4.5s" repeatCount="indefinite"
+              values="0.6;0.68;0.6" calcMode="spline"
+              keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
+    <ellipse cx="500" cy="260" rx="270" ry="330" fill="url(#spotlightGrad)"/>
+
+    <!-- drifting dust motes inside the beam -->
+    <circle cx="430" cy="160" r="1.4" fill="#FFF6D8" opacity="0.5">
+      <animate attributeName="cy" values="160;120;160" dur="9s" begin="2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.5;0.1;0.5" dur="9s" begin="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="560" cy="200" r="1.1" fill="#FFF6D8" opacity="0.4">
+      <animate attributeName="cy" values="200;150;200" dur="11s" begin="3.4s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.4;0.05;0.4" dur="11s" begin="3.4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="490" cy="320" r="1.6" fill="#FFF6D8" opacity="0.35">
+      <animate attributeName="cy" values="320;260;320" dur="8s" begin="4.6s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.35;0.05;0.35" dur="8s" begin="4.6s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="600" cy="360" r="1.2" fill="#FFF6D8" opacity="0.3">
+      <animate attributeName="cy" values="360;300;360" dur="10s" begin="5.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.3;0.05;0.3" dur="10s" begin="5.5s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- =====================================================================
+       LAYER 2 — Terminal (the "stage floor" content, revealed by curtains)
+       ===================================================================== -->
+  <g id="terminalGroup" opacity="0">
+    <animate attributeName="opacity" begin="2.6s" dur="0.9s" fill="freeze"
+              calcMode="spline" keyTimes="0;1" keySplines="0.25 0.1 0.25 1" values="0;1"/>
+
+    <g transform="translate(500,300)">
+      <g id="termScale" transform="scale(0.97)">
+        <animateTransform attributeName="transform" type="scale" begin="2.6s" dur="0.9s" fill="freeze"
+                           calcMode="spline" keyTimes="0;1" keySplines="0.25 0.1 0.25 1" values="0.97;1"/>
+        <g transform="translate(-500,-300)">
+
+          <!-- window body -->
+          <rect x="140" y="65" width="720" height="492" rx="16" fill="url(#terminalBg)"
+                stroke="#30363D" stroke-width="1.5" filter="url(#softShadow)"/>
+
+          <g clip-path="url(#termClip)">
+            <!-- title bar -->
+            <rect x="140" y="65" width="720" height="32" fill="url(#titleBarGrad)"/>
+            <line x1="140" y1="97" x2="860" y2="97" stroke="#30363D" stroke-width="1"/>
+            <circle cx="164" cy="81" r="6" fill="#FF5F56"/>
+            <circle cx="184" cy="81" r="6" fill="#FFBD2E"/>
+            <circle cx="204" cy="81" r="6" fill="#27C93F"/>
+            <text x="500" y="86" text-anchor="middle" font-size="12" fill="#8B949E">aayushi — zsh</text>
+
+            <!-- ===================== BOOT SEQUENCE ===================== -->
+            <g id="loadingGroup" opacity="1">
+              <animate attributeName="opacity" begin="8.0s" dur="0.5s" fill="freeze" values="1;0"/>
+
+              <!-- $ ./portfolio (typed) -->
+              <g>
+                <clipPath id="clipPortfolio">
+                  <rect x="168" y="112" width="0" height="26">
+                    <animate attributeName="width" begin="3.2s" dur="0.6s" fill="freeze"
+                              calcMode="spline" keyTimes="0;1" keySplines="0.25 0.1 0.25 1" values="0;170"/>
+                  </rect>
+                </clipPath>
+                <text clip-path="url(#clipPortfolio)" x="170" y="130" font-size="16">
+                  <tspan fill="#3FB950">$</tspan>
+                  <tspan fill="#E6EDF3" dx="8">./portfolio</tspan>
+                </text>
+              </g>
+
+              <!-- loading lines -->
+              <g opacity="0">
+                <animate attributeName="opacity" begin="3.8s" dur="0.15s" fill="freeze" values="0;1"/>
+                <text x="170" y="162" font-size="13.5" fill="#8B949E">Initializing profile...</text>
+                <use href="#checkSym" x="330" y="158"/>
+              </g>
+              <g opacity="0">
+                <animate attributeName="opacity" begin="4.3s" dur="0.15s" fill="freeze" values="0;1"/>
+                <text x="170" y="186" font-size="13.5" fill="#8B949E">Loading backend modules...</text>
+                <use href="#checkSym" x="355" y="182"/>
+              </g>
+              <g opacity="0">
+                <animate attributeName="opacity" begin="4.8s" dur="0.15s" fill="freeze" values="0;1"/>
+                <text x="170" y="210" font-size="13.5" fill="#8B949E">Loading ML systems...</text>
+                <use href="#checkSym" x="316" y="206"/>
+              </g>
+              <g opacity="0">
+                <animate attributeName="opacity" begin="5.3s" dur="0.15s" fill="freeze" values="0;1"/>
+                <text x="170" y="234" font-size="13.5" fill="#8B949E">Loading distributed systems...</text>
+                <use href="#checkSym" x="368" y="230"/>
+              </g>
+              <g opacity="0">
+                <animate attributeName="opacity" begin="5.8s" dur="0.15s" fill="freeze" values="0;1"/>
+                <text x="170" y="258" font-size="13.5" fill="#8B949E">Loading open-source contributions...</text>
+                <use href="#checkSym" x="404" y="254"/>
+              </g>
+
+              <!-- progress bar -->
+              <rect x="170" y="284" width="620" height="10" rx="5" fill="#161B22" stroke="#30363D"/>
+              <rect x="172" y="286" width="0" height="6" rx="3" fill="url(#barFillGrad)">
+                <animate attributeName="width" begin="6.5s" dur="1.3s" fill="freeze"
+                          calcMode="spline" keyTimes="0;1" keySplines="0.25 0.1 0.25 1" values="0;616"/>
+              </rect>
+              <text x="790" y="296" text-anchor="end" font-size="11" fill="#3FB950" opacity="0">
+                <animate attributeName="opacity" begin="7.6s" dur="0.3s" fill="freeze" values="0;1"/>
+                100%
+              </text>
+            </g>
+
+            <!-- ===================== TYPEWRITER INTRO ===================== -->
+            <g id="introGroup">
+              <g>
+                <clipPath id="clipLine1">
+                  <rect x="168" y="118" width="0" height="28">
+                    <animate attributeName="width" begin="8.6s" dur="1.0s" fill="freeze"
+                              calcMode="spline" keyTimes="0;1" keySplines="0.25 0.1 0.25 1" values="0;250"/>
+                  </rect>
+                </clipPath>
+                <text clip-path="url(#clipLine1)" x="170" y="135" font-size="21" fill="#E6EDF3" font-weight="600">
+                  Hello, I'm Aayushi.
+                </text>
+              </g>
+
+              <g>
+                <clipPath id="clipLine2">
+                  <rect x="168" y="155" width="0" height="24">
+                    <animate attributeName="width" begin="9.8s" dur="1.0s" fill="freeze"
+                              calcMode="spline" keyTimes="0;1" keySplines="0.25 0.1 0.25 1" values="0;300"/>
+                  </rect>
+                </clipPath>
+                <text clip-path="url(#clipLine2)" x="170" y="170" font-size="15.5" fill="#8B949E">
+                  Computer Science Undergraduate
+                </text>
+              </g>
+
+              <g>
+                <clipPath id="clipLine3">
+                  <rect x="168" y="185" width="0" height="24">
+                    <animate attributeName="width" begin="11.0s" dur="1.3s" fill="freeze"
+                              calcMode="spline" keyTimes="0;1" keySplines="0.25 0.1 0.25 1" values="0;540"/>
+                  </rect>
+                </clipPath>
+                <text clip-path="url(#clipLine3)" x="170" y="200" font-size="13.5">
+                  <tspan fill="#58A6FF">Backend Engineering</tspan>
+                  <tspan fill="#8B949E"> · </tspan>
+                  <tspan fill="#3FB950">Distributed Systems</tspan>
+                  <tspan fill="#8B949E"> · </tspan>
+                  <tspan fill="#58A6FF">Machine Learning</tspan>
+                </text>
+              </g>
+            </g>
+
+            <!-- ===================== ABOUT ME ===================== -->
+            <g id="aboutGroup" opacity="0">
+              <animate attributeName="opacity" begin="13.2s" dur="1.0s" fill="freeze"
+                        calcMode="spline" keyTimes="0;1" keySplines="0.25 0.1 0.25 1" values="0;1"/>
+
+              <text x="170" y="235" font-size="12" fill="#30363D">────────────────────────────────────────</text>
+
+              <text x="170" y="263" font-size="12.5" fill="#C9D1D9">I'm a Computer Science undergraduate building software across</text>
+              <text x="170" y="281" font-size="12.5" fill="#C9D1D9">backend engineering, distributed systems, and machine learning.</text>
+              <text x="170" y="299" font-size="12.5" fill="#C9D1D9">I enjoy designing scalable systems, intelligent applications, and</text>
+              <text x="170" y="317" font-size="12.5" fill="#C9D1D9">developer tools that solve practical problems.</text>
+              <text x="170" y="335" font-size="12.5" fill="#C9D1D9">My GitHub is a collection of projects that challenged me to learn</text>
+              <text x="170" y="353" font-size="12.5" fill="#C9D1D9">something new — whether that's optimizing distributed services,</text>
+              <text x="170" y="371" font-size="12.5" fill="#C9D1D9">experimenting with AI, or contributing to open source.</text>
+
+              <text x="170" y="395" font-size="13" fill="#58A6FF" font-weight="600">Currently exploring</text>
+
+              <g transform="translate(178,415)"><use href="#bulletSym"/></g>
+              <text x="190" y="415" font-size="12.5" fill="#C9D1D9">Backend Engineering</text>
+              <g transform="translate(178,433)"><use href="#bulletSym"/></g>
+              <text x="190" y="433" font-size="12.5" fill="#C9D1D9">Distributed Systems</text>
+              <g transform="translate(178,451)"><use href="#bulletSym"/></g>
+              <text x="190" y="451" font-size="12.5" fill="#C9D1D9">Machine Learning &amp; AI</text>
+              <g transform="translate(178,469)"><use href="#bulletSym"/></g>
+              <text x="190" y="469" font-size="12.5" fill="#C9D1D9">Developer Infrastructure</text>
+
+              <text x="170" y="493" font-size="12.5" fill="#E6EDF3" font-style="italic">Welcome behind the scenes.</text>
+              <text x="170" y="513" font-size="12" fill="#30363D">────────────────────────────────────────</text>
+            </g>
+
+            <!-- ===================== FINAL RESTING PROMPT ===================== -->
+            <g id="finalPromptGroup" opacity="0">
+              <animate attributeName="opacity" begin="14.6s" dur="0.4s" fill="freeze" values="0;1"/>
+              <text x="170" y="531" font-size="15">
+                <tspan fill="#3FB950">$</tspan>
+                <tspan fill="#E6EDF3" dx="9">_</tspan>
+              </text>
+              <rect x="184" y="518" width="9" height="16" fill="#E6EDF3" opacity="0">
+                <animate attributeName="opacity" begin="14.6s" dur="1s" repeatCount="indefinite" values="1;1;0;0;1"
+                          keyTimes="0;0.45;0.5;0.95;1"/>
+              </rect>
+            </g>
+
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+
+  <!-- =====================================================================
+       LAYER 3 — Curtains (on top; slide open to reveal the terminal)
+       ===================================================================== -->
+
+  <!-- top rod -->
+  <rect x="-20" y="-6" width="1040" height="14" fill="url(#goldGrad)" filter="url(#curtainShadow)"/>
+  <circle cx="10" cy="1" r="9" fill="url(#goldGrad)"/>
+  <circle cx="990" cy="1" r="9" fill="url(#goldGrad)"/>
+
+  <!-- LEFT CURTAIN -->
+  <g id="curtainLeft">
+    <animateTransform attributeName="transform" type="translate" begin="1.2s" dur="1.8s" fill="freeze"
+                        calcMode="spline" keyTimes="0;1" keySplines="0.16 1 0.3 1" values="0,0;-560,0"/>
+    <g filter="url(#curtainShadow)">
+      <!-- velvet panel with wavy hem -->
+      <path fill="url(#curtainVelvet)" d="
+        M0,0 H560 V560
+        C525,600 490,600 455,560
+        C420,600 385,600 350,560
+        C315,600 280,600 245,560
+        C210,600 175,600 140,560
+        C105,600 70,600 35,560
+        L0,560 Z"/>
+      <path fill="url(#curtainShade)" d="
+        M0,0 H560 V560
+        C525,600 490,600 455,560
+        C420,600 385,600 350,560
+        C315,600 280,600 245,560
+        C210,600 175,600 140,560
+        C105,600 70,600 35,560
+        L0,560 Z"/>
+      <!-- gold valance / swag -->
+      <path fill="url(#goldGrad)" d="
+        M0,0 H560 V20
+        C525,70 490,70 455,20
+        C420,70 385,70 350,20
+        C315,70 280,70 245,20
+        C210,70 175,70 140,20
+        C105,70 70,70 35,20
+        L0,20 Z"/>
+      <path d="M0,20 C35,70 70,70 105,20" fill="none" stroke="#8A6A14" stroke-width="1.5" opacity="0.6"/>
+      <path d="M140,20 C175,70 210,70 245,20" fill="none" stroke="#8A6A14" stroke-width="1.5" opacity="0.6"/>
+      <path d="M280,20 C315,70 350,70 385,20" fill="none" stroke="#8A6A14" stroke-width="1.5" opacity="0.6"/>
+      <path d="M420,20 C455,70 490,70 525,20" fill="none" stroke="#8A6A14" stroke-width="1.5" opacity="0.6"/>
+      <!-- tassels hanging at each swag dip -->
+      <use href="#tasselSym" x="70"  y="68"/>
+      <use href="#tasselSym" x="210" y="68"/>
+      <use href="#tasselSym" x="350" y="68"/>
+      <use href="#tasselSym" x="490" y="68"/>
+    </g>
+  </g>
+
+  <!-- RIGHT CURTAIN (mirrored reuse of the left artwork) -->
+  <g id="curtainRight">
+    <animateTransform attributeName="transform" type="translate" begin="1.2s" dur="1.8s" fill="freeze"
+                        calcMode="spline" keyTimes="0;1" keySplines="0.16 1 0.3 1" values="0,0;560,0"/>
+    <g transform="matrix(-1,0,0,1,1000,0)" filter="url(#curtainShadow)">
+      <path fill="url(#curtainVelvet)" d="
+        M0,0 H560 V560
+        C525,600 490,600 455,560
+        C420,600 385,600 350,560
+        C315,600 280,600 245,560
+        C210,600 175,600 140,560
+        C105,600 70,600 35,560
+        L0,560 Z"/>
+      <path fill="url(#curtainShade)" d="
+        M0,0 H560 V560
+        C525,600 490,600 455,560
+        C420,600 385,600 350,560
+        C315,600 280,600 245,560
+        C210,600 175,600 140,560
+        C105,600 70,600 35,560
+        L0,560 Z"/>
+      <path fill="url(#goldGrad)" d="
+        M0,0 H560 V20
+        C525,70 490,70 455,20
+        C420,70 385,70 350,20
+        C315,70 280,70 245,20
+        C210,70 175,70 140,20
+        C105,70 70,70 35,20
+        L0,20 Z"/>
+      <path d="M0,20 C35,70 70,70 105,20" fill="none" stroke="#8A6A14" stroke-width="1.5" opacity="0.6"/>
+      <path d="M140,20 C175,70 210,70 245,20" fill="none" stroke="#8A6A14" stroke-width="1.5" opacity="0.6"/>
+      <path d="M280,20 C315,70 350,70 385,20" fill="none" stroke="#8A6A14" stroke-width="1.5" opacity="0.6"/>
+      <path d="M420,20 C455,70 490,70 525,20" fill="none" stroke="#8A6A14" stroke-width="1.5" opacity="0.6"/>
+      <use href="#tasselSym" x="70"  y="68"/>
+      <use href="#tasselSym" x="210" y="68"/>
+      <use href="#tasselSym" x="350" y="68"/>
+      <use href="#tasselSym" x="490" y="68"/>
+    </g>
+  </g>
+
+</svg>
