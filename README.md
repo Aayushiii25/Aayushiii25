@@ -118,7 +118,7 @@ Technical interests:
     <img src="https://github-readme-streak-stats.herokuapp.com?user=Aayushiii25&theme=github-dark-blue&hide_border=true&background=0D1117&ring=FF4DA6&fire=FF4DA6&currStreakLabel=58A6FF&sideLabels=58A6FF&dates=8B949E" alt="GitHub Streak" width="49%"/>
   </a>
   <a href="https://github.com/Aayushiii25">
-    <img src="https://github-readme-stats.vercel.app/api?username=Aayushiii25&show_icons=true&theme=github_dark&hide_border=true&bg_color=0D1117&icon_color=FF4DA6&title_color=58A6FF&text_color=C9D1D9&include_all_commits=true&count_private=true" alt="GitHub Stats" width="49%"/>
+    <img src="https://github-readme-stats-sigma-five.vercel.app/api?username=Aayushiii25&show_icons=true&theme=github_dark&hide_border=true&bg_color=0D1117&icon_color=FF4DA6&title_color=58A6FF&text_color=C9D1D9&include_all_commits=true&count_private=true" alt="GitHub Stats" width="49%"/>
   </a>
 </p>
 
