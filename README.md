@@ -10,11 +10,10 @@
   I'm <span style="color:#FF69B4;">Aayushi Dhurandhar</span>
 </h1>
 
+
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?color=4070f4&size=25&center=true&vCenter=true&width=500&lines=Full+Stack+Developer;Passionate+About+Coding!;Building+Scalable+Web+Apps" />
+  <img src="https://readme-typing-svg.herokuapp.com?color=4070f4&size=25&center=true&vCenter=true&width=700&lines=Computer+Science+Student;Building+Projects%2C+Solving+Problems;Learning+Every+Day" />
 </p>
-
-
 
 ------
 
