@@ -5,12 +5,15 @@
 
 
 
+<h1 align="center">
+  Hey <img src="https://emojis.slackmojis.com/emojis/images/1588315024/8823/hyperkitty.gif?1588315024" height="30px" width="30px">
+  I'm <span style="color:#FF69B4;">Aayushi Dhurandhar</span>
+</h1>
+
 <p align="center">
-  <img 
-    src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&weight=700&size=24&duration=2200&pause=1200&color=FF4DA6&center=true&vCenter=true&width=700&lines=Hi+there,+I'm+Aayushi!+👋;Still+learning...+Still+building..." 
-    alt="Animated Header + Footer"
-  />
+  <img src="https://readme-typing-svg.herokuapp.com?color=4070f4&size=25&center=true&vCenter=true&width=500&lines=Full+Stack+Developer;Passionate+About+Coding!;Building+Scalable+Web+Apps" />
 </p>
+
 
 
 ------
