@@ -62,7 +62,8 @@ Technical interests:
 
 
 
-## 💻 Tech Stack
+## Tech Stack <img src="https://raw.githubusercontent.com/sindresorhus/sindresorhus/refs/heads/main/cat-typing.gif" height="30px" width="30px">
+
 
 **Languages**  
 ![Skills](https://skillicons.dev/icons?i=cpp,py,java,ts,js)
