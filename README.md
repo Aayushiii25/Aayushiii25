@@ -17,7 +17,7 @@
 
 ------
 
-# 💫 About Me
+#  About Me <img src="https://gist.githubusercontent.com/x1ah/1470a67fad1b6297a35a1828505ebb30/raw/cat.gif" width="80" alt="Cat">
 
 
 
@@ -62,7 +62,7 @@ Technical interests:
 
 
 
-## Tech Stack <img src="https://raw.githubusercontent.com/sindresorhus/sindresorhus/refs/heads/main/cat-typing.gif" height="30px" width="30px">
+# Tech Stack <img src="https://raw.githubusercontent.com/sindresorhus/sindresorhus/refs/heads/main/cat-typing.gif" height="30px" width="30px">
 
 
 **Languages**  
@@ -114,7 +114,8 @@ Technical interests:
 
 ------
 
-## 🔗 Connect With Me
+## 🔗 Connect With Me  <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExc3A5YWQ1a3JyODdpNWw0amF3OWc3aXE4ODU5bmR3bnN3aHRyb2s3eiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/NbhiwA0C8THIv8KvG5/giphy.gif" width="40px" height="40px" alt="Coding GIF">
+
 
 <p align="center">
   <a href="https://www.linkedin.com/in/aayushi-dhurandhar-6b838536b/"><img src="https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin" /></a>
