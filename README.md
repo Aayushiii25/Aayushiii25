@@ -65,7 +65,95 @@ Technical interests:
 # Tech Stack <img src="https://raw.githubusercontent.com/sindresorhus/sindresorhus/refs/heads/main/cat-typing.gif" height="30px" width="30px">
 
 
+<table width="100%">
+<tr>
+<td valign="top" width="600px">
+
+
+
 **Languages**  
+
+![Skills](https://skillicons.dev/icons?i=cpp,py,java,ts,js)
+![SQL](https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+
+---
+
+**Frontend**  
+
+![Skills](https://skillicons.dev/icons?i=react,nextjs,tailwind,vite)
+
+----
+
+**Backend**  
+
+![Skills](https://skillicons.dev/icons?i=fastapi,flask,nodejs,express,spring)
+
+-----
+
+**Machine Learning & Data**  
+
+![Skills](https://skillicons.dev/icons?i=pytorch,sklearn)
+![XGBoost](https://img.shields.io/badge/XGBoost-EB0028?style=for-the-badge)
+![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
+![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
+
+----
+
+**Databases & Cache**  
+
+![Skills](https://skillicons.dev/icons?i=postgres,mongodb,redis)
+
+----
+
+**Infrastructure & DevOps**  
+
+![Skills](https://skillicons.dev/icons?i=docker,rabbitmq,nginx,aws,githubactions)
+
+----
+
+**Tools**  
+
+![Skills](https://skillicons.dev/icons?i=git,github,vscode,postman)
+
+</td>
+
+<td valign="top" align="center" width="400px">
+
+<img src="https://github.com/Anmol-Baranwal/Cool-GIFs-For-GitHub/assets/74038190/7b282ec6-fcc3-4600-90a7-2c3140549f58" width="500" >
+<br><br>
+<img src="https://github.com/Anmol-Baranwal/Cool-GIFs-For-GitHub/assets/74038190/7b282ec6-fcc3-4600-90a7-2c3140549f58" width="500" >
+<br><br>
+
+</td>
+</tr>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--**Languages**  
 ![Skills](https://skillicons.dev/icons?i=cpp,py,java,ts,js)
 ![SQL](https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
 
@@ -88,7 +176,7 @@ Technical interests:
 ![Skills](https://skillicons.dev/icons?i=docker,rabbitmq,nginx,aws,githubactions)
 
 **Tools**  
-![Skills](https://skillicons.dev/icons?i=git,github,vscode,postman)
+![Skills](https://skillicons.dev/icons?i=git,github,vscode,postman)-->
 
 
 ------
