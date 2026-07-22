@@ -96,13 +96,13 @@
       
       <!-- Easy -->
       <text x="0" y="65" class="stat-label">Easy:</text>
-      <text x="250" y="65" text-anchor="end" class="stat-val">141 / 956</text>
+      <text x="250" y="65" text-anchor="end" class="stat-val">140 / 955</text>
       <rect x="0" y="72" width="250" height="6" class="bar-bg" />
       <rect x="0" y="72" width="37" height="6" class="bar-easy" />
 
       <!-- Medium -->
       <text x="0" y="105" class="stat-label">Medium:</text>
-      <text x="250" y="105" text-anchor="end" class="stat-val">308 / 2088</text>
+      <text x="250" y="105" text-anchor="end" class="stat-val">309 / 2089</text>
       <rect x="0" y="112" width="250" height="6" class="bar-bg" />
       <rect x="0" y="112" width="37" height="6" class="bar-medium" />
 
@@ -154,5 +154,5 @@
   
   <!-- Footer Refreshed Status -->
   <text x="15" y="239" class="footer-text">[SYSTEM STATUS: ONLINE]</text>
-  <text x="285" y="239" text-anchor="end" class="footer-text">REFRESHED: 2026-07-22 01:24 UTC</text>
+  <text x="285" y="239" text-anchor="end" class="footer-text">REFRESHED: 2026-07-22 13:18 UTC</text>
 </svg>
