@@ -15,6 +15,12 @@
   <img src="https://readme-typing-svg.herokuapp.com?color=4070f4&size=25&center=true&vCenter=true&width=700&lines=Computer+Science+Student;Building+Projects%2C+Solving+Problems;Learning+Every+Day" />
 </p>
 
+<p align="center">
+  <a href="https://aayushii-dhurandhar.vercel.app">
+    <img src="https://img.shields.io/badge/Visit%20Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Visit Portfolio">
+  </a>
+</p>
+
 ------
 
 #  About Me <img src="https://gist.githubusercontent.com/x1ah/1470a67fad1b6297a35a1828505ebb30/raw/cat.gif" width="80" alt="Cat">
