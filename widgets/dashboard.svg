@@ -92,7 +92,7 @@
       
       <!-- Stats -->
       <text x="0" y="40" class="stat-label">Solved Total:</text>
-      <text x="250" y="40" text-anchor="end" class="stat-highlight">528 / 4013</text>
+      <text x="250" y="40" text-anchor="end" class="stat-highlight">529 / 4017</text>
       
       <!-- Easy -->
       <text x="0" y="65" class="stat-label">Easy:</text>
@@ -102,13 +102,13 @@
 
       <!-- Medium -->
       <text x="0" y="105" class="stat-label">Medium:</text>
-      <text x="250" y="105" text-anchor="end" class="stat-val">313 / 2095</text>
+      <text x="250" y="105" text-anchor="end" class="stat-val">314 / 2098</text>
       <rect x="0" y="112" width="250" height="6" class="bar-bg" />
       <rect x="0" y="112" width="37" height="6" class="bar-medium" />
 
       <!-- Hard -->
       <text x="0" y="145" class="stat-label">Hard:</text>
-      <text x="250" y="145" text-anchor="end" class="stat-val">74 / 960</text>
+      <text x="250" y="145" text-anchor="end" class="stat-val">74 / 961</text>
       <rect x="0" y="152" width="250" height="6" class="bar-bg" />
       <rect x="0" y="152" width="19" height="6" class="bar-hard" />
     </g>
@@ -154,5 +154,5 @@
   
   <!-- Footer Refreshed Status -->
   <text x="15" y="239" class="footer-text">[SYSTEM STATUS: ONLINE]</text>
-  <text x="285" y="239" text-anchor="end" class="footer-text">REFRESHED: 2026-08-09 00:48 UTC</text>
+  <text x="285" y="239" text-anchor="end" class="footer-text">REFRESHED: 2026-08-09 12:24 UTC</text>
 </svg>
