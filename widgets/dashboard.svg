@@ -92,11 +92,11 @@
       
       <!-- Stats -->
       <text x="0" y="40" class="stat-label">Solved Total:</text>
-      <text x="250" y="40" text-anchor="end" class="stat-highlight">530 / 4018</text>
+      <text x="250" y="40" text-anchor="end" class="stat-highlight">532 / 4018</text>
       
       <!-- Easy -->
       <text x="0" y="65" class="stat-label">Easy:</text>
-      <text x="250" y="65" text-anchor="end" class="stat-val">141 / 958</text>
+      <text x="250" y="65" text-anchor="end" class="stat-val">142 / 958</text>
       <rect x="0" y="72" width="250" height="6" class="bar-bg" />
       <rect x="0" y="72" width="37" height="6" class="bar-easy" />
 
@@ -108,9 +108,9 @@
 
       <!-- Hard -->
       <text x="0" y="145" class="stat-label">Hard:</text>
-      <text x="250" y="145" text-anchor="end" class="stat-val">75 / 962</text>
+      <text x="250" y="145" text-anchor="end" class="stat-val">76 / 962</text>
       <rect x="0" y="152" width="250" height="6" class="bar-bg" />
-      <rect x="0" y="152" width="19" height="6" class="bar-hard" />
+      <rect x="0" y="152" width="20" height="6" class="bar-hard" />
     </g>
   </a>
 
@@ -154,5 +154,5 @@
   
   <!-- Footer Refreshed Status -->
   <text x="15" y="239" class="footer-text">[SYSTEM STATUS: ONLINE]</text>
-  <text x="285" y="239" text-anchor="end" class="footer-text">REFRESHED: 2026-08-12 00:57 UTC</text>
+  <text x="285" y="239" text-anchor="end" class="footer-text">REFRESHED: 2026-08-12 12:41 UTC</text>
 </svg>
