@@ -92,7 +92,7 @@
       
       <!-- Stats -->
       <text x="0" y="40" class="stat-label">Solved Total:</text>
-      <text x="250" y="40" text-anchor="end" class="stat-highlight">533 / 4033</text>
+      <text x="250" y="40" text-anchor="end" class="stat-highlight">535 / 4033</text>
       
       <!-- Easy -->
       <text x="0" y="65" class="stat-label">Easy:</text>
@@ -102,9 +102,9 @@
 
       <!-- Medium -->
       <text x="0" y="105" class="stat-label">Medium:</text>
-      <text x="250" y="105" text-anchor="end" class="stat-val">314 / 2105</text>
+      <text x="250" y="105" text-anchor="end" class="stat-val">316 / 2105</text>
       <rect x="0" y="112" width="250" height="6" class="bar-bg" />
-      <rect x="0" y="112" width="37" height="6" class="bar-medium" />
+      <rect x="0" y="112" width="38" height="6" class="bar-medium" />
 
       <!-- Hard -->
       <text x="0" y="145" class="stat-label">Hard:</text>
@@ -154,5 +154,5 @@
   
   <!-- Footer Refreshed Status -->
   <text x="15" y="239" class="footer-text">[SYSTEM STATUS: ONLINE]</text>
-  <text x="285" y="239" text-anchor="end" class="footer-text">REFRESHED: 2026-08-23 12:16 UTC</text>
+  <text x="285" y="239" text-anchor="end" class="footer-text">REFRESHED: 2026-08-24 00:35 UTC</text>
 </svg>
