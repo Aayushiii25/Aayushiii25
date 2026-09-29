@@ -76,7 +76,7 @@
     <!-- Heatmap Grid -->
     <g transform="translate(35, 48)">
       <rect class="cell cell-active" x="0" y="0" width="10" height="10" rx="2" ry="2" fill="#161b22" data-date="2025-09-28" data-count="0" data-col="0" data-row="0" />
-    <rect class="cell cell-active" x="0" y="13" width="10" height="10" rx="2" ry="2" fill="#39ff14" data-date="2025-09-29" data-count="10" data-col="0" data-row="1" />
+    <rect class="cell cell-active" x="0" y="13" width="10" height="10" rx="2" ry="2" fill="#161b22" data-date="2025-09-29" data-count="0" data-col="0" data-row="1" />
     <rect class="cell cell-active" x="0" y="26" width="10" height="10" rx="2" ry="2" fill="#161b22" data-date="2025-09-30" data-count="0" data-col="0" data-row="2" />
     <rect class="cell cell-active" x="0" y="39" width="10" height="10" rx="2" ry="2" fill="#161b22" data-date="2025-10-01" data-count="0" data-col="0" data-row="3" />
     <rect class="cell cell-active" x="0" y="52" width="10" height="10" rx="2" ry="2" fill="#161b22" data-date="2025-10-02" data-count="0" data-col="0" data-row="4" />
@@ -451,7 +451,7 @@
     <!-- Footer Stats and Legend -->
     <g transform="translate(15, 152)">
       <!-- Solved count summary -->
-      <text x="0" y="0" class="stats-text">833 submissions in the last year</text>
+      <text x="0" y="0" class="stats-text">823 submissions in the last year</text>
       
       <!-- Legend -->
       <g transform="translate(560, -9)">
@@ -464,7 +464,7 @@
         <text x="34" y="8" class="legend-text" text-anchor="start">More</text>
       </g>
       
-      <text x="355" y="0" text-anchor="middle" class="footer-text">REFRESHED: 2026-09-29 03:06 UTC</text>
+      <text x="355" y="0" text-anchor="middle" class="footer-text">REFRESHED: 2026-09-29 17:11 UTC</text>
     </g>
   </a>
 </svg>
