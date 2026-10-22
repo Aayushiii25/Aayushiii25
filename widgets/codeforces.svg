@@ -214,11 +214,11 @@
     <rect class="cell cell-active" x="247" y="39" width="10" height="10" rx="2" ry="2" fill="#161b22" data-date="2026-03-04" data-count="0" data-col="19" data-row="3" />
     <rect class="cell cell-active" x="247" y="52" width="10" height="10" rx="2" ry="2" fill="#161b22" data-date="2026-03-05" data-count="0" data-col="19" data-row="4" />
     <rect class="cell cell-active" x="247" y="65" width="10" height="10" rx="2" ry="2" fill="#161b22" data-date="2026-03-06" data-count="0" data-col="19" data-row="5" />
-    <rect class="cell cell-active" x="247" y="78" width="10" height="10" rx="2" ry="2" fill="#d946ef" data-date="2026-03-07" data-count="8" data-col="19" data-row="6" />
+    <rect class="cell cell-active" x="247" y="78" width="10" height="10" rx="2" ry="2" fill="#161b22" data-date="2026-03-07" data-count="0" data-col="19" data-row="6" />
     <rect class="cell cell-active" x="260" y="0" width="10" height="10" rx="2" ry="2" fill="#161b22" data-date="2026-03-08" data-count="0" data-col="20" data-row="0" />
     <rect class="cell cell-active" x="260" y="13" width="10" height="10" rx="2" ry="2" fill="#161b22" data-date="2026-03-09" data-count="0" data-col="20" data-row="1" />
     <rect class="cell cell-active" x="260" y="26" width="10" height="10" rx="2" ry="2" fill="#161b22" data-date="2026-03-10" data-count="0" data-col="20" data-row="2" />
-    <rect class="cell cell-active" x="260" y="39" width="10" height="10" rx="2" ry="2" fill="#8b5cf6" data-date="2026-03-11" data-count="4" data-col="20" data-row="3" />
+    <rect class="cell cell-active" x="260" y="39" width="10" height="10" rx="2" ry="2" fill="#161b22" data-date="2026-03-11" data-count="0" data-col="20" data-row="3" />
     <rect class="cell cell-active" x="260" y="52" width="10" height="10" rx="2" ry="2" fill="#161b22" data-date="2026-03-12" data-count="0" data-col="20" data-row="4" />
     <rect class="cell cell-active" x="260" y="65" width="10" height="10" rx="2" ry="2" fill="#161b22" data-date="2026-03-13" data-count="0" data-col="20" data-row="5" />
     <rect class="cell cell-active" x="260" y="78" width="10" height="10" rx="2" ry="2" fill="#161b22" data-date="2026-03-14" data-count="0" data-col="20" data-row="6" />
@@ -296,12 +296,12 @@
     <rect class="cell cell-active" x="403" y="13" width="10" height="10" rx="2" ry="2" fill="#161b22" data-date="2026-05-25" data-count="0" data-col="31" data-row="1" />
     <rect class="cell cell-active" x="403" y="26" width="10" height="10" rx="2" ry="2" fill="#161b22" data-date="2026-05-26" data-count="0" data-col="31" data-row="2" />
     <rect class="cell cell-active" x="403" y="39" width="10" height="10" rx="2" ry="2" fill="#161b22" data-date="2026-05-27" data-count="0" data-col="31" data-row="3" />
-    <rect class="cell cell-active" x="403" y="52" width="10" height="10" rx="2" ry="2" fill="#8b5cf6" data-date="2026-05-28" data-count="4" data-col="31" data-row="4" />
+    <rect class="cell cell-active" x="403" y="52" width="10" height="10" rx="2" ry="2" fill="#161b22" data-date="2026-05-28" data-count="0" data-col="31" data-row="4" />
     <rect class="cell cell-active" x="403" y="65" width="10" height="10" rx="2" ry="2" fill="#161b22" data-date="2026-05-29" data-count="0" data-col="31" data-row="5" />
     <rect class="cell cell-active" x="403" y="78" width="10" height="10" rx="2" ry="2" fill="#161b22" data-date="2026-05-30" data-count="0" data-col="31" data-row="6" />
     <rect class="cell cell-active" x="416" y="0" width="10" height="10" rx="2" ry="2" fill="#161b22" data-date="2026-05-31" data-count="0" data-col="32" data-row="0" />
     <rect class="cell cell-active" x="416" y="13" width="10" height="10" rx="2" ry="2" fill="#161b22" data-date="2026-06-01" data-count="0" data-col="32" data-row="1" />
-    <rect class="cell cell-active" x="416" y="26" width="10" height="10" rx="2" ry="2" fill="#1e3a8a" data-date="2026-06-02" data-count="1" data-col="32" data-row="2" />
+    <rect class="cell cell-active" x="416" y="26" width="10" height="10" rx="2" ry="2" fill="#161b22" data-date="2026-06-02" data-count="0" data-col="32" data-row="2" />
     <rect class="cell cell-active" x="416" y="39" width="10" height="10" rx="2" ry="2" fill="#161b22" data-date="2026-06-03" data-count="0" data-col="32" data-row="3" />
     <rect class="cell cell-active" x="416" y="52" width="10" height="10" rx="2" ry="2" fill="#161b22" data-date="2026-06-04" data-count="0" data-col="32" data-row="4" />
     <rect class="cell cell-active" x="416" y="65" width="10" height="10" rx="2" ry="2" fill="#161b22" data-date="2026-06-05" data-count="0" data-col="32" data-row="5" />
@@ -451,7 +451,7 @@
     <!-- Footer Stats and Legend -->
     <g transform="translate(15, 152)">
       <!-- Solved count summary -->
-      <text x="0" y="0" class="stats-text">17 accepted submissions in the last year</text>
+      <text x="0" y="0" class="stats-text">0 accepted submissions in the last year</text>
       
       <!-- Legend -->
       <g transform="translate(560, -9)">
@@ -464,7 +464,7 @@
         <text x="34" y="8" class="legend-text" text-anchor="start">More</text>
       </g>
       
-      <text x="355" y="0" text-anchor="middle" class="footer-text">REFRESHED: 2026-10-22 02:16 UTC</text>
+      <text x="355" y="0" text-anchor="middle" class="footer-text">REFRESHED: 2026-10-22 16:12 UTC</text>
     </g>
   </a>
 </svg>
